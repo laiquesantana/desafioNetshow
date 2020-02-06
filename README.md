@@ -1,3 +1,22 @@
+
+## php artisan dusk:install
+Steps to reproduce the behavior if you don't have Xdebug activated already:
+
+Inside your project root directory open your CMD terminal and type php -i
+A list of important information concerning your php will be listed in the CMD terminal
+Copy and paste the output here https://xdebug.org/wizard
+After you paste the output, click on the button Analyse my phpinfo() output to proceed
+Follow the instructions to the latter after your redirect to the Summary page
+After you are done with the installation, type php -v to confirm that Xdebug is activated successfully.
+If you already have Xdebug activated, follow these steps get test coverage running;
+
+Type ./vendor/bin/phpunit --coverage-html tests/coverage into the CMD terminal to generate the test coverage
+After it is done with running the tests successfully, the coverage report of the tests will be in the project_dir/tests/coverage directory
+Inside the project_dir/tests/coverage directory, click on the index.html file to open and view the general report of the project's phpunit test coverage
+NB: I worked in Laravel ^6.0
+Tested in Windows 10 environment but can be replicated in other environments
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

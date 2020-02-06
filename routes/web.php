@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('contate-nos');
 });
+
+Route::resource('contato', 'contatoController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
